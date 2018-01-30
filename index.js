@@ -1,13 +1,19 @@
 const http = require("http");
+const fs = require("fs");
 
 http.createServer(function (request, response) {
     // Send the HTTP header 
     // HTTP Status: 200 : OK
     // Content Type: text/plain
     response.writeHead(200, {'Content-Type': 'text/html'});
+    const stream = fs.createReadStream("./secretSantaForm.html");
+    stream.pipe(response);
     
     // Send the response body as "Hello World"
-    response.end('<html><head></head><body><p>Hello World!</p></body></html>');
+    
+    stream.on('end', function(){
+        response.end();
+    })
  }).listen(8081);
  
  // Console will print the message
