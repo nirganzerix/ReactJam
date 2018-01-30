@@ -1,0 +1,30 @@
+{
+  "name": "reactjam",
+  "version": "1.0.0",
+  "description": "Secret Santa React Jam Session",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirganzerix/ReactJam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nirganzerix/ReactJam/issues"
+  },
+  "homepage": "https://github.com/nirganzerix/ReactJam#readme",
+  "dependencies": {
+    "cookie": "^0.3.1",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "http": "0.0.0",
+    "nonce": "^1.0.4",
+    "react": "^16.2.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  }
+}
