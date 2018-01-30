@@ -1,1 +1,1 @@
-const React = require('react')
+<p>Hello World</p>

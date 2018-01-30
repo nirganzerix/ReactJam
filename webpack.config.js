@@ -1,15 +1,15 @@
-import webpack from 'webpack'
-import path from 'path'
+const webpack = require('webpack')
+const path = require('path')
 
 module.exports = {
   entry: [
     'babel-polyfill',
-    './src/client',
+    './src/client'
   ],
   module: {
     loaders: [
       {test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ }
-    ],
+    ]
   },
   output: {
     filename: 'bundle.js',
@@ -21,8 +21,8 @@ module.exports = {
       '.js',
       '.json',
       '.jsx',
-    ],
-  },
+    ]
+  }
 };
 
 
