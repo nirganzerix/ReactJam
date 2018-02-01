@@ -1,44 +1,51 @@
 const webpack = require('webpack')
 const path = require('path')
 
-module.exports = {
-  entry: [
-    'babel-polyfill',
-    './src/client'
-  ],
+const BUILT_DIR = path.resolve(__dirname, 'src/client/public');
+const APP_DIR = path.resolve(__dirname, 'src/client');
+
+const config = {
+  entry: APP_DIR + '/index.jsx',
+  output: {
+    path: BUILT_DIR,
+    filename: 'bundle.js',
+    publicPath: 'scripts/'
+  },
   module: {
     loaders: [
-      {test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ }
-    ]
-  },
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'src/client/public')
-    // path
-  },
-  resolve: {
-    extensions: [
-      '.js',
-      '.json',
-      '.jsx',
+      {
+        test: /\.jsx?/,
+        include: APP_DIR,
+        loader: 'babel-loader'
+      }
     ]
   }
 };
 
+module.exports = config;
+// const webpack = require('webpack')
+// const path = require('path')
 
-//SIMPLEST VERSION
-// var webpack = require('webpack');
-// var path = require('path');
-
-// var BUILD_DIR = path.resolve(__dirname, 'src/client/public');
-// var APP_DIR = path.resolve(__dirname, 'src/client/app');
-
-// var config = {
-//   entry: APP_DIR + '/index.jsx',
+// module.exports = {
+//   entry: [
+//     'babel-polyfill',
+//     './src/client'
+//   ],
+//   module: {
+//     loaders: [
+//       {test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ }
+//     ]
+//   },
 //   output: {
-//     path: BUILD_DIR,
-//     filename: 'bundle.js'
+//     filename: 'bundle.js',
+//     path: path.resolve(__dirname, 'src/client/public')
+//     // path
+//   },
+//   resolve: {
+//     extensions: [
+//       '.js',
+//       '.json',
+//       '.jsx',
+//     ]
 //   }
 // };
-
-// module.exports = config;
