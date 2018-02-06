@@ -1,4 +1,5 @@
 import React from 'react';
+import RaisedButton from 'material-ui/RaisedButton';
 
 class AwesomeComponent extends React.Component {
 
@@ -17,7 +18,7 @@ class AwesomeComponent extends React.Component {
     return (
       <div>
         Likes : <span>{this.state.likesCount}</span>
-        <div><button onClick={this.onLike}>Like Me</button></div>
+        <div><RaisedButton primary={true} onClick={this.onLike}>Like Me</RaisedButton></div>
       </div>
     );
   }
