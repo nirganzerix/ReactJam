@@ -7,7 +7,7 @@ const config = require('./webpack.config')
 const compiler = webpack(config)
 
 const app = express()
-app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: '/scripts' }))
+app.use(webpackDevMiddleware(compiler, { noInfo: true, stats: 'errors-only', publicPath: '/scripts' }))
 
 
 app.get('/', (req, res) => {
