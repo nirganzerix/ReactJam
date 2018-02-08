@@ -7,7 +7,6 @@ import isEmpty from 'lodash/isEmpty'
 import shuffle from 'lodash/shuffle'
 
 class SecretSantaForm extends React.Component {
-
   constructor(props){
     super(props);
     this.state = {

@@ -23,29 +23,3 @@ const config = {
 };
 
 module.exports = config;
-// const webpack = require('webpack')
-// const path = require('path')
-
-// module.exports = {
-//   entry: [
-//     'babel-polyfill',
-//     './src/client'
-//   ],
-//   module: {
-//     loaders: [
-//       {test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ }
-//     ]
-//   },
-//   output: {
-//     filename: 'bundle.js',
-//     path: path.resolve(__dirname, 'src/client/public')
-//     // path
-//   },
-//   resolve: {
-//     extensions: [
-//       '.js',
-//       '.json',
-//       '.jsx',
-//     ]
-//   }
-// };

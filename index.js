@@ -9,9 +9,7 @@ const compiler = webpack(config)
 const app = express()
 app.use(webpackDevMiddleware(compiler, { noInfo: true, stats: 'errors-only', publicPath: '/scripts' }))
 
-
 app.get('/', (req, res) => {
-    // res.set('Content-Type', 'text/html')
     res.send(`
     <!doctype html>
         <html>
@@ -27,6 +25,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(8081, () => {
-// Console will print the message
 console.log('Server running at http://127.0.0.1:8081/')
 })

@@ -7,15 +7,15 @@ const NameTable = ({ nameList }) => {
     height: '1rem'
   }
   return (
-        <div>
-          { nameList.map((name, index, array) => (
-            <h5 key={name}>
-              {name}
-              <Arrow style={arrowStyle} />
-              {array[index+1] || array[0]}
-            </h5>
-          ))}
-        </div>
+    <div>
+      { nameList.map((name, index, array) => (
+        <h5 key={name}>
+          {name}
+          <Arrow style={arrowStyle} />
+          {array[index+1] || array[0]}
+        </h5>
+      ))}
+    </div>
   );
 }
 
