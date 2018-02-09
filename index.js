@@ -15,6 +15,7 @@ app.get('/', (req, res) => {
         <html>
             <head>
                 <title>Secret Santa</title>
+                <link rel="stylesheet" type="text/css" href="./scripts/style.css"></link>
             </head>
             <body>
                 <div id="root"></div>

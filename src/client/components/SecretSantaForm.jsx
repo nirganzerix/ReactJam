@@ -36,7 +36,7 @@ class SecretSantaForm extends React.Component {
     }
 
     return (
-      <div style={{backgroundColor: 'black', height: 800}}>
+      <div id="background" >
         <Paper style={paperStyle} zDepth={5}>
           <h1>John and Monica's Secret Santa Fucking Amazing Application That Will Amaze Your Dad</h1>
           <TextField floatingLabelText="Enter A Name And Hit Enter" onKeyPress={(event) => this.moveName(event)} /><br />
