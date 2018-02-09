@@ -40,7 +40,7 @@ class SecretSantaForm extends React.Component {
         <Paper style={paperStyle} zDepth={5}>
           <h1>John and Monica's Secret Santa Fucking Amazing Application That Will Amaze Your Dad</h1>
           <TextField floatingLabelText="Enter A Name And Hit Enter" onKeyPress={(event) => this.moveName(event)} /><br />
-          <RaisedButton label="Shuffle That Shuffle" disabled={this.state.nameList.length <= 1} onClick={this.shuffleThatShuffle}/>
+          <RaisedButton label="Shuffle That Shuffle" disabled={this.state.nameList.length <= 1} onClick={this.shuffleThatShuffle} primary/>
           <NameTable nameList={this.state.nameList} />
         </Paper>
       </div>
