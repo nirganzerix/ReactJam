@@ -1,1 +1,1 @@
-.background{background-color:"#000";height:800}div{color:"pink";border:"4px solid orange"}
+#background{background-color:#000;height:800px}#name-list{max-height:400px;overflow-y:scroll;max-width:400px;margin:0 auto}

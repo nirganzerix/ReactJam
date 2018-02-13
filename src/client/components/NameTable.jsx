@@ -7,7 +7,7 @@ const NameTable = ({ nameList }) => {
     height: '1rem'
   }
   return (
-    <div>
+    <div id="name-list">
       { nameList.map((name, index, array) => (
         <h5 key={name}>
           {name}

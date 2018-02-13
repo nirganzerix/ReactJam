@@ -2,3 +2,9 @@
   background-color: black;
   height: 800px;
 }
+#name-list {
+  max-height: 400px;
+  overflow-y: scroll;
+  max-width: 400px;
+  margin: 0 auto;
+}

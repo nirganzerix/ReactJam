@@ -19,6 +19,10 @@ app.get('/', (req, res) => {
             </head>
             <body>
                 <div id="root"></div>
+                <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.js"></script>
+                <script>
+                    Snowflakes();
+                </script>
                 <script src="./scripts/bundle.js"></script>
             </body>
         </html>
