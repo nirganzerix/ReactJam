@@ -19,6 +19,7 @@ const config = {
     loaders: [
       { test: /\.jsx?/, include: APP_DIR, loader: 'babel-loader'},
       { test: /\.scss/, include: APP_DIR, use: ExtractTextPlugin.extract({ fallback: 'style-loader', use:'css-loader!sass-loader'})},
+     // { test: /\.(pdf|jpg|png|gif|svg|ico)$/, loaders: ['file-loader?name=images/[name].[ext]']},
     ]
   },
   resolve: {
