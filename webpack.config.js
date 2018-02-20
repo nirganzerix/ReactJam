@@ -18,7 +18,7 @@ const config = {
   module: {
     loaders: [
       { test: /\.jsx?/, include: APP_DIR, loader: 'babel-loader'},
-      { test: /\.scss/, include: APP_DIR, use: ExtractTextPlugin.extract({ fallback: 'style-loader', use:'css-loader!sass-loader'})}
+      { test: /\.scss/, include: APP_DIR, use: ExtractTextPlugin.extract({ fallback: 'style-loader', use:'css-loader!sass-loader'})},
     ]
   },
   resolve: {
